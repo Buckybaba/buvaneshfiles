@@ -1,0 +1,108 @@
+*{
+	font-family: sans-serif;
+	text-align: center;
+
+}
+
+header,section,aside,footer{
+	margin: ;
+	padding: 20px;
+	border: 1px soild blue;
+}
+header{
+	background: red;
+}
+.menu {
+	flex-basis: 200px;
+	background: violet;
+}
+.content{
+	flex-grow: 1;
+	background-color: blue;
+}
+aside{
+	flex-basis: 200px;
+	border:1px soild blue ;
+	background: grey;
+}
+footer{
+	border:1px soild blue ;
+	background: tomato;
+}
+
+.flex-container{
+        display: flex;
+} 
+
+
+/* responsive flex box*/
+
+
+.responsive {
+		display: flex;
+		flex-flow: row wrap;
+		text-align: center;
+}
+
+.responsive > *{
+	padding: 10px ;
+	margin: 10px ;
+	flex: 1 100%;
+	border-radius:10px ;
+
+}
+
+.header1{
+	background: tomato;
+	height: 120px ;
+    
+}
+
+.footer1{
+background: lightgreen;
+height: 80px ; 
+ }
+
+ .main{
+ 	flex-grow: ;
+ 	text-align: left;
+ 	background: deepskyblue;
+ 	height: 300px ;
+    font-size: 24px;
+ }
+
+ .aside1{
+ 	background: yellow;
+ }
+ .aside2{
+ 	background: gold;
+ }
+
+ @media all and (min-width: 800px ){
+
+ 	.main{
+ 		flex: 3;
+ 	}
+
+ 	.aside1{
+ 		order: 1;
+ 	}
+ 	.aside2{
+ 		order: 1;
+ 	}
+ 	.main{
+ 		order:1;
+ 	}
+ 	.footer1{
+ 		order: 4;
+ 	}
+ }
+@media all and (min-width: 600px ){
+	.aside {
+		flex: 2;
+	}
+} 
+
+
+
+
