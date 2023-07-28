@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>svg circle animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #XMLID_4_{
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 2000;
+                fill: #FFFFFF;
+                stroke: #000000;
+            }
+            svg:hover #XMLID_4_{
+                -webkit-animation: draw 3s forwards;
+                animation: draw 3s;
+            }
+            @keyframes draw{
+                from{
+                    stroke-dashoffset: 1000;
+                    fill:#efefef;
+                    stroke:#ff5535;
+                }
+                to{
+                    stroke-dashoffset: 0;   
+                }
+            }
+            @-webkit-keyframes draw{
+                from{
+                    stroke:#ff5535;
+                    stroke-dashoffset: 1000; 
+                }
+                to{
+                    stroke-dashoffset: 0;   
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+        <g>
+        <circle id="XMLID_4_"  stroke-width="3" stroke-miterlimit="10" cx="366.5" cy="135.6" r="44.7"/>
+        </g>
+        </svg>
+    </body>
+</html>
